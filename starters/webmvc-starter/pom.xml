@@ -4,16 +4,24 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>webmvc-scafflod</artifactId>
-    <version>0.0.1</version>
-
     <parent>
         <artifactId>spring-boot-scaffold</artifactId>
         <groupId>com.binchaos</groupId>
         <version>0.0.1</version>
     </parent>
 
+    <artifactId>webmvc-starter</artifactId>
+    <!-- 无需显式声明 version，直接复用父项目版本号 -->
+
     <dependencies>
+        <!-- ======================= 项目模块依赖 ======================= -->
+        <dependency>
+            <groupId>com.binchaos</groupId>
+            <artifactId>base-starter</artifactId>
+            <!-- 当前项目的版本号，也即父项目的版本号 -->
+            <version>${project.version}</version>
+        </dependency>
+
         <!-- ======================= Spring Boot 系列 ======================= -->
 
         <!-- ===== Spring Boot 启动必备 ===== -->

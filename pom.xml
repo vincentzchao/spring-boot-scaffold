@@ -5,11 +5,16 @@
 
     <groupId>com.binchaos</groupId>
     <artifactId>spring-boot-scaffold</artifactId>
+    <!-- 项目统一版本号，各模块共用一个版本号 -->
     <version>0.0.1</version>
     <packaging>pom</packaging>
 
     <modules>
-        <module>webmvc-scafflod</module>
+        <module>base</module>
+
+        <module>starters/base-starter</module>
+        <module>starters/webmvc-starter</module>
+        <module>scenes/user/user-reg-login</module>
     </modules>
 
     <properties>
